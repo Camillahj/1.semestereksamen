@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LÆGEHUS</title>
+    <meta name=”robots” content=”noindex”><!--Denne kode sørger for at Google ikke kan finde siden-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!--CSS bootstrap-->
+    <link rel="stylesheet" type="text/css" href="lægehus.css" /> <!--CSS filen-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> <!--Får java-bootstrap til at virke (fx dropdownmenu + burgerbar samtidigt)-->
+</head>
+
+
+<!--------------NAVIGATIONSBAR------------->
+<nav class="navbar navbar-expand-lg sticky-top"> <!--navbaren følger med-->
+  <div class="container-fluid">
+
+<a class="navbar-brand" href="forside.html">LÆGERNES HUS</a>
+<button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+        
+<li class="nav-item">
+  <a class="nav-link active" aria-current="page" href="#"> <b>SELVBETJENING</b></a>
+</li>
+       
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      INFORMATION
+  </a>
+          
+<ul class="dropdown-menu">
+  <li><a class="dropdown-item" href="praktiskinfo.html">Praktisk information</a></li>
+  <li><a class="dropdown-item" href="#">Vacciner</a></li>
+  <li><a class="dropdown-item" href="#">Gravid</a></li>
+    </ul>
+         
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      LÆGEHUSET
+  </a>
+            
+<ul class="dropdown-menu">
+  <li><a class="dropdown-item" href="personale.html">Personale</a></li>
+  <li><a class="dropdown-item" href="findos.html">Find os</a></li>
+  <li><a class="dropdown-item" href="#">Samarbejdspartnere</a></li>
+    </ul>
+            
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="findos.html"> FIND KLINIKKEN</a>
+  </li>
+      </ul>
+        </div>
+          </div>
+            </nav>
+
+<!--Hero forside billede-->
+<div class="mask">
+<div class="d-flex align-items-center h-100">
+<div class="text-white col-md-5">
+  </div>
+    </div>
+      </div>
+
+<div class="container-fluid">
+<div class="row">   
+
+<div class="selvbetjeningsknap ml-auto"> <!-- ml = margin left - skubber den så langt fra venstre som muligt-->
+  <a href="#" class="btn btn-1" tabindex="-1" role="button" aria-disabled>LOG PÅ SELVBETJENING</a> 
+    </div>
+      </div>
+        </div>
+
+<div class="text-center" id="velkommen">
+  <h1 class="h1-forside">VELKOMMEN TIL LÆGERNES HUS</h1>
+    </div>
+     
+
+<!--KASSER PÅ FORSIDE-->
+<div class="container-fluid forside-boks"> <!--kasse der fylder hele siden (de tre kasser)-->
+<div class="row justify-content-center"> 
+
+<div class="col-lg-4 col-md-6"  id="kasse-forside"> <!-- col = hvor mange kolonner kassen fylder, man tager udgangspunkt i 12 md= device som er medium str. og opefter-->
+
+<!--KASSE TIL VENSTRE-->
+
+<div class="kasse-forside text-center"> <!--kasse til venstre-->
+
+<img src="img/telephone.png" class="img-fluid" id="telefon" alt="https://www.flaticon.com/free-icon/telephone_3891977?term=telephone&page=1&position=19&page=1&position=19&related_id=3891977&origin=search">    
+  
+<p> Vi kan kontaktes på telefon 7575 7575, du kan også skrive til os via Selvbetjening</p>
+  <a href="#" class="btn btn-2" tabindex="-1" role="button" aria-disabled>LÆS MERE HER</a>
+    </div>
+      </div> 
+
+ 
+<!--KASSE I MIDTEN-->
+<div class="col-lg-4 col-md-6">
+<div class="kasse-forside text-center"> 
+
+<img src="img/findvej.png" class="img-fluid" id="findvej" alt="https://www.flaticon.com/free-icon/destination_1244560?term=route&page=1&position=6&page=1&position=6&related_id=1244560&origin=search">
+  
+<p>Du kan finde os på Lægegade 75, 7575 Lægebyen</p>  
+  <br>
+
+<a href="#" class="btn btn-3" tabindex="-1" role="button" aria-disabled>LÆS MERE HER</a>
+  </div>
+    </div> 
+
+<!--KASSE TIL HØJRE-->
+<div class="col-lg-4 col-md-6 text-center" id="kasse-th-forside"> 
+<div class="kasse-forside">
+
+<img src="img/vaccine.png" class="img-fluid" id="vaccine" alt="https://www.flaticon.com/free-icon/vaccine_3088000?term=vaccine&page=1&position=25&page=1&position=25&related_id=3088000&origin=search">
+    
+<p>Hos Lægernes Hus tilbyder vi en række vacciner, du kan læse mere om det her på hjemmesiden</p>
+    
+<a href="#" class="btn btn-4" tabindex="-1" role="button" aria-disabled>LÆS MERE HER</a>
+  </div> 
+    </div>
+
+  </div>
+    </div> 
+
+<!--FOOTER-->
+<section class="footer-section"> <!-- https://mdbootstrap.com/docs/standard/navigation/footer/ -->
+<footer class="text-lg-start text-center">
+    
+<!-- Grid container -->
+<div class="container p-4">
+      
+<!--Grid row-->
+<div class="row">
+
+<!--Grid column-->
+<div class="col-lg-4 col-md-8 mb-4 mb-md-0">
+  <h5 class="text-uppercase mb-3">TELEFONTIDER</h5>
+  
+<ul class="list-unstyled">
+  <li>
+    <p class="">Mandag til fredag</p>
+  </li>
+
+  <li>
+    <p class=""> kl: 08:00 - 10:00 <br> kl: 10:30 - 12:00</p>
+  </li>
+            
+  <li>
+    <p class=""> Tlf: 7575 7575</p>
+  </li>
+          
+  <li>
+    <p class="">læge@lægerneshus.dk <br>Lægegade 75, 7575 Lægebyen</p>
+  </li>
+
+  </ul>
+    </div>
+       
+  <!--Grid column-->
+  <div class="col-lg-4 col-md-8 mb-4 mb-md-0">
+    <h5 class="text-uppercase mb-3">LÆGEHUSETS ÅBNINGSTIDER</h5>
+  
+  <ul class="list-unstyled">
+            
+  <li>
+    <img src="img/ur2.png" class="ur-footer" alt="https://www.flaticon.com/free-icon/clock_283327?term=clock&page=1&position=67&page=1&position=67&related_id=283327&origin=search">
+    <p class="">Mandag til torsdag <br> kl: 08.00 - 16.00 <br>Fredag kl: 12.00 - 16:00 </p>
+  </li>
+            
+  </ul>
+    </div>
+   
+<!--Grid column-->
+<div class="col-lg-4 col-md-8 mb-4 mb-md-0">
+  <h5 class="text-uppercase mb-3">LÆGEVAGTEN</h5>
+          
+<ul class="list-unstyled">
+          
+<li>
+  <p class=""> Ved akut sygdom <br>kontaktes lægevagten på: <br>Tlf: 2525 2525</p>
+</li>
+          
+<li>
+  <p class=""> Hverdage: fra 16:00 - 08:00 <br> Weekend og helligdage: hele døgnet </p>
+</li>
+        
+</ul>
+  </div>
+    </div>
+      </div>
+
+UNDERVISNINGSBRUG
+
+</footer>
+  </section>
+    
+</body>
+  </html>
