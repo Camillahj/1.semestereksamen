@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LÆGEHUS</title>
+    <title>Find Os - Lægernes Hus</title>
     <meta name=”robots” content=”noindex”><!--Denne kode sørger for at Google ikke kan finde siden-->
+    <meta name="description" content="Du finder lægehuset på Lægegade 75, 7575 Lægebyen. Du kan bruge rutevejledningen til at finde vej til lægehuset">
+    <meta name="keywords" content="Find os, find klinikken, lægehus, rutevejledning">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!--CSS bootstrap-->
-    <link rel="stylesheet" type="text/css" href="lægehus.css" /> <!--CSS filen-->
+    <link rel="stylesheet" type="text/css" href="lægehus.css"> <!--CSS filen-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> <!--Får java-bootstrap til at virke (fx dropdownmenu + burgerbar samtidigt)-->
 </head>
 
@@ -15,77 +17,77 @@
 <body>
 
 
-<!--------------NAVIGATIONSBAR------------->
-<nav class="navbar navbar-expand-lg sticky-top"> <!--navbaren følger med-->
+<!--------------BURGERMENU - EXPAND = DEN BLIVER EN STOR NAVBAR NÅR SIDEN ER STOR------------->
+<nav class="navbar navbar-expand-lg sticky-top"> <!--navbaren følger med--> <!--Expand gør at den bliver til en fuld nav-bar når skærmen er stor-->
     <div class="container-fluid">
-
-<a class="navbar-brand" href="forside.html">LÆGERNES HUS</a>
-<button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-<ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+  
+  <a class="navbar-brand" href="index.html">LÆGERNES HUS</a>
+  <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav ml-auto mb-2 mb-lg-0"> <!-- ml auto = skubber burgerbaren så langt fra venstre som muligt-->
           
-<li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#"> <b>SELVBETJENING</b></a>
-</li>
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#"> SELVBETJENING</a>
+  </li>
          
-<li class="nav-item dropdown">
+  <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         INFORMATION
     </a>
             
-<ul class="dropdown-menu">
+  <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="praktiskinfo.html">Praktisk information</a></li>
     <li><a class="dropdown-item" href="#">Vacciner</a></li>
     <li><a class="dropdown-item" href="#">Gravid</a></li>
-        </ul>
+      </ul>
            
-<li class="nav-item dropdown">
+  <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         LÆGEHUSET
     </a>
               
-<ul class="dropdown-menu">
+  <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="personale.html">Personale</a></li>
     <li><a class="dropdown-item" href="findos.html">Find os</a></li>
     <li><a class="dropdown-item" href="#">Samarbejdspartnere</a></li>
-        </ul>
+      </ul>
               
-<li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="findos.html"> FIND KLINIKKEN</a>
-        
-</li>
-    </ul>
-        </div>
+  <li class="nav-item">
+  <a class="nav-link active" aria-current="page" href="findos.html"> FIND KLINIKKEN</a>
+    </li>
+        </ul> <!--lukker den første ul-->
+          </div>
             </div>
-                </nav>
+              </nav>
 
 
 <h1 id="findklinikkenh1">Find vej til lægehuset</h1>
         
 <!-----------KASSE 1 --------->
 <div class="row" id="kasse1findos">
-    <div class="col-sm-6">
+    <div class="col-sm-6"> <!--fylder 6 colonner på lille skærm-->
     <div class="card-findos">
     <div class="card-body">
 
-    <p><b>Lægernes hus:</b> Lægegade 75, 7575 Lægebyen 
+    <p class="tekstfindos"><b>Lægernes hus:</b> Lægegade 75, 7575 Lægebyen 
         <br><b>Telefonnummer:</b> 7575 7575 
-            <b>E-mail:</b> læge@lægerneshus.dk</p>
+            <br><b>E-mail:</b> læge@lægerneshus.dk</p>
+            
 
 </div>
     </div>
         </div>
               
 <!-----------KASSE 2----------->
-<div class="col-sm-6">
-    <div class="card-findos">
+<div class="col-sm-6"> 
+    <div class="card-findos-th">
     <div class="card-body">
 
-    <p class="tekstfindos"> <b>Rutevejledning:</b> Ved rundkørslen med statuen på Lægevej drejes mod Lægebyen. Følg Lægevejen til du har passeret skolen, derefter er det 1. vej på højre hånd. Huset er ottekantet og synligt fra vejen, så du kan ikke tage fejl.</p>
-                  
+    <p class="tekstfindos"> <b>Rutevejledning:</b> Ved rundkørslen med statuen på Lægevej drejes mod Lægebyen. <br>Følg Lægevejen til du har passeret skolen, derefter er det 1. vej på højre hånd. Huset er ottekantet og synligt fra vejen, så du kan ikke tage fejl.</p>
+             
 </div>
     </div>
         </div>
@@ -105,7 +107,7 @@
 <!-----------KASSE 4----------->
 
 <div class="col-sm-6">
-    <div class="card-findos">
+    <div class="card-findos-th">
     <div class="card-body">
                         
 <p class="tekstfindos"> <b> Parkering: </b> Foran lægehuset er der en stor p-plads</p>
@@ -119,13 +121,16 @@
 
 <!--GOOGLE MAPS BILLEDE -->
 
-<div class="container-fluid ml-5 mb-5 mr-5"> 
+<div class="container-fluid text-center">  
     <div class="maps-kort">
 
-<iframe class="googlemaps col-lg-4 col-md-8 mb-4 mb-md-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2222.794710578335!2d8.977660215945745!3d56.143362980659596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464bbbfdd6042ed5%3A0xd9a07f909966d00d!2sGl%20Landevej%202%2C%207400%20Herning!5e0!3m2!1sda!2sdk!4v1670947357667!5m2!1sda!2sdk" width="92%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe class="googlemaps col-lg-11 col-md-8 mb-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2222.794710578335!2d8.977660215945745!3d56.143362980659596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464bbbfdd6042ed5%3A0xd9a07f909966d00d!2sGl%20Landevej%202%2C%207400%20Herning!5e0!3m2!1sda!2sdk!4v1670947357667!5m2!1sda!2sdk" width="1100" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<!--col 11 = fylder 11 colonner på stor skærm, md = fylder 8 på medium skærm, mb = margin bottom-->
+
 
 </div>
-</div>
+    </div>
 
 <!------------FOOTER----------->
 <section class="footer-section"> <!-- https://mdbootstrap.com/docs/standard/navigation/footer/ -->
@@ -143,19 +148,19 @@
 
 <ul class="list-unstyled">
 <li>
-    <p class="">Mandag til fredag</p>
+    <p>Mandag til fredag</p>
 </li>
 
 <li>
-    <p class=""> kl: 08:00 - 10:00 <br> kl: 10:30 - 12:00</p>
+    <p> kl: 08:00 - 10:00 <br> kl: 10:30 - 12:00</p>
 </li>
                       
 <li>
-    <p class=""> Tlf: 7575 7575</p>
+    <p> Tlf: 7575 7575</p>
 </li>
                     
 <li>
-    <p class="">læge@lægerneshus.dk <br>Lægegade 75, 7575 Lægebyen</p>
+    <p>læge@lægerneshus.dk <br>Lægegade 75, 7575 Lægebyen</p>
 </li>
                     
 </ul>
@@ -168,7 +173,7 @@
 <ul class="list-unstyled">
 <li>
     <img src="img/ur2.png" class="ur-footer" alt="https://www.flaticon.com/free-icon/clock_283327?term=clock&page=1&position=67&page=1&position=67&related_id=283327&origin=search">
-    <p class="">Mandag til torsdag <br> kl: 08.00 - 16.00 <br>Fredag kl: 12.00 - 16:00 </p>
+    <p>Mandag til torsdag <br> kl: 08.00 - 16.00 <br><br>Fredag kl: 08.00 - 12.00</p>
 </li>
                       
 </ul>
@@ -180,11 +185,11 @@
 
 <ul class="list-unstyled">
 <li>
-    <p class=""> Ved akut sygdom <br>kontaktes lægevagten på: <br>Tlf: 2525 2525</p>
+    <p> Ved akut sygdom <br>kontaktes lægevagten på: <br> <br>Tlf: 2525 2525</p>
 </li>
                     
 <li>
-    <p class=""> Hverdage: fra 16:00 - 08:00 <br> Weekend og helligdage: hele døgnet</p>
+    <p> Hverdage: fra 16:00 - 08:00 <br> Weekend og helligdage: hele døgnet</p>
 </li>
                   
 </ul>

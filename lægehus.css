@@ -1,78 +1,81 @@
 
-@import url("https://use.typekit.net/gsf3cop.css"); /*Gør at jeg kan bruge Adobe fonts*/
-
-
 /*TYPOGRAFI*/
 
-#velkommen{
-padding-top: 60px;
-padding-bottom: 20px;
-font-size: 3em;
-font-family: baskerville-urw, serif;
-font-weight: 500;
-font-style: normal;
-   
+*{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-/*---------------------FORSIDE---------------------*/
 
 
 /*----------Navigationsbar----------*/
+
 .navbar{
-padding-top: 40px;       /*Bestemmer størrelsen og farven på navigantionsbaren*/
+padding-top: 40px;  /*Bestemmer størrelsen og farven på navigantionsbaren*/
 padding-bottom: 40px;
-background-color: #19253B;
+background-color:#19253B;
 }
 
-.custom-toggler .navbar-toggler-icon {   /* Det ændrer farven på burgermenuen. RASMUS HVAD GØR DET HER*/
+.custom-toggler .navbar-toggler-icon {   /* Det ændrer farven på burgermenuen*/
 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  }
-
+}
 
 
 .navbar-brand{ /*Bestemmer størrelsen på "logoet", farven på skriften og fonttypen*/
-font-size: 2em;
+font-size: 2.0em;
 color:#F8F8F8; 
 margin-left: 2em;
-font-family: baskerville-urw, serif;
-font-weight: 500;
-font-style: normal; 
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 .navbar-brand:hover{
-color:#788AAC;
+color:#455674;
 }
 
-.nav-link{  /*Bestemmer farve og størrelse på mine punkter i navigationsbaren*/
-font-size: 1em;
+.nav-link{  /*Bestemmer farve på mine punkter i navigationsbaren*/
 color:#F8F8F8;
 }
 
 .nav-link:hover{
-color: #788AAC;
+color:#455674;
 }
 
-.h1-forside{
+/*---------------------FORSIDE---------------------*/
+
+/*Det store billede på forside*/ 
+.mask {
+background-image: url(img/forside.jpg);
+height: 30em;
+background-size: cover; /*Fylder det hele*/
+background-position: center center;
+background-repeat: no-repeat; /*Hvis billedet er for lille, sørger dette for at der kun er et billede, så den ikke sætter flere*/
+width: 100%;
+    
+}
+
+.h1-forside{ /*Velkommen til lægernes hus*/
 color: #19253B;
+padding-top: 40px;
+padding-bottom: 20px;
+font-size: 3em;     
 }
 
 .btn-1{ /*Selvbetjeningskanp på forside*/
-margin-right:160px;
-margin-top: 50px;
+margin-right:133px;
+margin-top: -240px;
 padding-top: 20px;
 padding-bottom: 20px;
 padding-left: 70px;
 padding-right: 70px;
 background-color: #19253B;
 color:#F8F8F8;
-font-size: 1,9em; 
+font-size: 1.6em; 
 }
 
-.btn-1:hover{
-color:#788AAC;
+.btn-1:hover{ /*Selvbetjeningsknap forside*/
+color:#455674;
 }
 
-.btn-2{ /*Farve på knappen og skriften på knappen, derudover størrelse på knap*/
+
+.btn-2{ /* Telefon - Læs mere knap + Farve på knappen og skriften på knappen, derudover størrelse på knap*/
 background-color: #19253B;
 color: #F8F8F8;
 padding-top: 15px;
@@ -81,11 +84,11 @@ padding-left: 40px;
 padding-right: 40px;
 }
 
-.btn-2:hover{
+.btn-2:hover{ 
 color:#788AAC;
 }
 
-.btn-3{
+.btn-3{ /* Find vej - Læs mere knap*/
 background-color: #19253B;
 color: #F8F8F8;
 padding-top: 15px;
@@ -94,11 +97,11 @@ padding-left: 40px;
 padding-right: 40px;
 }
 
-.btn-3:hover{
+.btn-3:hover{ 
 color:#788AAC;
 }
 
-.btn-4{
+.btn-4{ /* Vaccine - Læs mere knap*/
 background-color: #19253B;
 color: #F8F8F8;
 padding-top: 15px;
@@ -111,32 +114,20 @@ padding-right: 40px;
 color:#788AAC;
 }
 
-/*Billede på forside*/ /*RASMUS FORKLAR*/
-.mask {
-background-image: url(img/forside.jpg);
-height: 30em;
-background-size: cover; /*Fylder det hele*/
-background-position: center center;
-background-repeat: no-repeat; /*Hvis billedet er for lille, sørger dette for at der kun er et billede, så den ikke sætter flere*/
-width: 100%;
-  
-}
 
-
-.selvbetjeningsknap{ /*bestemmer placering på knappen, den skubber den fra toppen*/
-margin-top: -200px;
-}
-
-.forside-boks{
-padding-top: 30px;
+.forside-boks{ /*En stor kasse hvor de tre små kasser er i*/
+padding-top: 20px;
 padding-bottom: 100px;
+
 }
 
-.kasse-forside{
+.kasse-forside{ /*Bestemmer størrele på de tre små kasser hvor de tre symboler er i*/
 padding-left:100px;
 padding-right:100px;
+
 }
 
+/*De tre små billeder på forsiden*/
 #telefon{
 padding:50px;
 padding-bottom:30px;
@@ -154,62 +145,72 @@ padding-bottom:30px;
 
 /* -------------PERSONALE SIDE-----------*/
 
-#personale{
+
+/*Dette er min h1 på personalesiden*/
+#personale{ 
 margin-left: 60px;
-margin-top: 30px;
+margin-top: 50px;
+margin-bottom: 20px;
 }
 
-.tekstpersonale{
+
+/*Bestemmer placering af teksten*/
+.tekstpersonale{ 
 margin-left:60px;
-
+margin-bottom: 50px;
 }
-fieldset{
+
+
+/*Dette ændrer placering og størrelse på mit fieldset, jeg bruger kun fieldset på denne side, derfor behøver den ikke nogen class.*/
+/*Når man gør det på denne måde, sørger den for at alle fieldsets er samme størrelse*/
+fieldset{ 
 padding-top: 10px;
 padding-bottom: 40px;
 padding-left: 50px;
 padding-right: 50px;
 margin-right: 500px;
-
 margin-top: 40px;
 margin-bottom: 40px;
 background-color:#AAA9A3;
 border-radius: 5px;
 }
 
+
+/*Dette sørger for at alle mine legends er samme str. og farve*/
 legend{
 padding-top: 10px;
 padding-bottom: 10px;
 padding-left: 20px;
 padding-right: 20px;
-width: 255px;
+width:255px;
 background-color:#19253B;
 color: #F8F8F8;
 font-size: 1em;
 border-radius: 5px;
-
 }
 
+
+/*Dette gør at alle cards er samme str og farve. Cards er der hvor billederne sidder*/
 .card-personale{
 background-color:#AAA9A3;
-color:#19253B;
-text-align: right;
-font-size: 0,9em;
+color:#19253B; /*Farve på skriften i cards*/
+text-align:center;
+font-size: 1.0em;
 padding-top: 20px;
 border:none;
-width: 250x;
-border-radius: 5px;
-
-    
+border-radius: 5px;  
 }
 
+/*Bestemmer højde og bredde på alle billederne da de har samme class*/
 .card-img-top1{
 height: auto;
 width: 250px;
-  
 }
 
 /*------------PRAKTISK INFO---------*/
 
+
+/*h1 på siden, bestemmer farve og str. på striften, samt placering*/
 #praktiskinfoh1{
 color: #19253B;
 margin-top: 60px;
@@ -217,51 +218,47 @@ margin-left: 95px;
 margin-bottom: -40px;
 }
 
-#infokasse h4{
+#infokasse h4{ /*Den vælger de h4'er som er inde i infokassen og ikke alle h4 på hjemmesiden*/
 color:#19253B;
 margin-top: 50px;
-margin-left: -13px;
+margin-left: -23px;
 }
 
-#infokasse{
+#infokasse{ /*Kassen udenom - den store*/
 margin-top: 20px;
 margin-bottom: 80px;
 
 }
 
-.ferie{
-margin-left: -13px;
-}
 
-    
-.tekstinfo{
-margin-left: -13px;
+.tekstinfo{ /*Gør at alt tekst med denne class står lige da de har samme margin-left*/
+margin-left: -23px;
+color: #19253B;
     
 }
 
-.tekstinfo-selvbj{
-margin-left: -13px;
+.tekstinfo-selvbj{ /*Log på selvbetjening - knap - tekst */
+margin-left: -23px;
 margin-bottom: 50px;
 }
 
-.selvbetjeningsknapinfo{
+.selvbetjeningsknapinfo{ /*Farve og placering af selvbetjeningsknappen*/
 background-color: #19253B;
 color: #F8F8F8;
 padding-top: 15px;
 padding-bottom: 15px;
 padding-left: 35px;
 padding-right: 35px;
-margin-left: 500px;
+margin-left: 522px;
 border-radius: 5px;
-  
 }
 
 
 .selvbetjeningsknapinfo:hover{
-color: #788AAC;
+color:#455674;
 }
 
-#lillekasseinfo{
+#lillekasseinfo{ /*Den grå/beige kasse på info-siden*/
 background-color:#AAA9A3;
 margin-left: 30px;
 margin-top: -5px;
@@ -270,77 +267,77 @@ padding-top: 30px;
 border-radius: 5px;
 }
 
-#ur2{
-padding: 90px;
-margin-top: -60px;
-}
 
-.lillekasseoverskrift1{
+.lillekasseoverskrift1{ /*----Åbningstider----*/
 color: #F8F8F8;
 margin-top: -50px;
 margin-left: 100px;
 
 }
 
-.lillekasseoverskrift2{
+#åbningstider{ /*Tekst til åbningstider*/
+color: #F8F8F8;
+}
+
+#ur2{ /*Billede af ur*/
+padding: 90px;
+margin-top: -60px;
+}
+
+.lillekasseoverskrift2{ /*----Telefontider----*/
 color: #F8F8F8;
 margin-top: -70px;
 margin-bottom: 30px;
-margin-left: 100px;
-    
+margin-left: 100px;    
 }
 
-#åbningstider{
-color: #F8F8F8;
-}
 
-#telefon2{
-color: #F8F8F8;
-padding: 100px;
-margin-top: -80px;
-}
-
-.overskrift2{
-color: #F8F8F8;
-margin-left: 85px;
-}
-
-#telefontider{
+#telefontider{ /*Tekst til telefontider*/
 color: #F8F8F8;
 padding-bottom: 30px;
 }
 
+#telefon2{
+padding: 100px; /*Billede af telefon*/
+margin-top: -80px;
+}
+
 /*-------------FIND OS------------*/
 
-#findklinikkenh1{
+#findklinikkenh1{ /*Overskrift på siden*/
 margin-top: 40px;
-margin-left: 60px;
+margin-left: 95px;
 margin-bottom: 40px;
+color: #19253B;
 }
 
-.card-findos{
-padding-left: 40px;
-padding-bottom: 0px;
+.card-findos{ /*De to kasser til venstre*/
+padding-left: 80px;
+
 }
 
+.card-findos-th{ /*De to kasser til højre*/
+padding-right: 80px;
 
+}
 
-
-#findklinikkenh1{
+.tekstfindos{ /*Farve på tekst*/
 color:#19253B;
 }
 
-.tekstfindos{
-color:#19253B;
+.maps-kort{ /*Google maps billede*/
+padding-top: 30px;
+padding-bottom: 50px;
 }
+
+
 /*------------FOOTER------------*/
 
-.footer-section{
+.footer-section{ /*Farve på selve footer og skriften i footeren. Padding giver mere plads i footeren*/
 background-color: #19253B;
 color: #F8F8F8;
 padding-top: 50px;
 padding-bottom: 80px;
-   
 }
 
 .ur-footer{
@@ -349,6 +346,6 @@ margin-bottom: 20px;
 margin-top: 10px;
 }
 
-.footer-bund{
-bottom: 0;
-}
+
+
+

@@ -5,70 +5,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LÆGEHUS</title>
+    <title>Mød vores personale - Lægernes Hus</title>
     <meta name=”robots” content=”noindex”><!--Denne kode sørger for at Google ikke kan finde siden-->
+    <meta name="description" content="Hos Lægernes Hus har vi mange dygtige medarbejdere, du kan møde dem alle her.">
+    <meta name="keywords" content="lægehus, læger, sygeplejersker, sekretærer, personale.">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!--CSS bootstrap-->
-    <link rel="stylesheet" type="text/css" href="lægehus.css" /> <!--CSS filen-->
+    <link rel="stylesheet" type="text/css" href="lægehus.css"> <!--CSS filen-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> <!--Får java-bootstrap til at virke (fx dropdownmenu + burgerbar samtidigt)-->
 </head>
+
 <body>
 
-<!--------------NAVIGATIONSBAR------------->
-<nav class="navbar navbar-expand-lg sticky-top"> <!--navbaren følger med-->
+<!--------------BURGERMENU - EXPAND = DEN BLIVER EN STOR NAVBAR NÅR SIDEN ER STOR------------->
+<nav class="navbar navbar-expand-lg sticky-top"> <!--navbaren følger med--> <!--Expand gør at den bliver til en fuld nav-bar når skærmen er stor-->
     <div class="container-fluid">
-
-<a class="navbar-brand" href="forside.html">LÆGERNES HUS</a>
-<button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-<ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-            
-<li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#"> <b>SELVBETJENING</b></a>
-        </li>
-           
-           
-<li class="nav-item dropdown">
+  
+  <a class="navbar-brand" href="index.html">LÆGERNES HUS</a>
+  <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav ml-auto mb-2 mb-lg-0"> <!-- ml auto = skubber burgerbaren så langt fra venstre som muligt-->
+          
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#"> SELVBETJENING</a>
+  </li>
+         
+  <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-       
-    INFORMATION
-     </a>
-              
-              
-<ul class="dropdown-menu">
+        INFORMATION
+    </a>
+            
+  <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="praktiskinfo.html">Praktisk information</a></li>
     <li><a class="dropdown-item" href="#">Vacciner</a></li>
     <li><a class="dropdown-item" href="#">Gravid</a></li>
-        </ul>
-             
-             
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        
+      </ul>
+           
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         LÆGEHUSET
-        </a>
-                
-                
-<ul class="dropdown-menu">
+    </a>
+              
+  <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="personale.html">Personale</a></li>
     <li><a class="dropdown-item" href="findos.html">Find os</a></li>
     <li><a class="dropdown-item" href="#">Samarbejdspartnere</a></li>
-        </ul>
-                
-                
-<li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="findos.html"> FIND KLINIKKEN</a>
-            
-</ul> <!--lukker den første ul-->
-    </div>
-        </div>
-            </nav>
+      </ul>
+              
+  <li class="nav-item">
+  <a class="nav-link active" aria-current="page" href="findos.html"> FIND KLINIKKEN</a>
+    </li>
+        </ul> <!--lukker den første ul-->
+          </div>
+            </div>
+              </nav>
 
 
 <!-------------STOR KASSE PÅ PERSONALESIDE-------------->
  
+
 <h1 id="personale">Mød vores personale</h1>
     <p class="tekstpersonale">I Lægernes hus har vi 3 sygeplejesker og 3 læger ansat, derudover har vi to søde sekretærer 
         <br>som sidder klar til at modtage jeres opkald. Du kan møde dem alle på siden her.</p>
@@ -77,7 +74,7 @@
 
 <a id="sygeplejersker"></a>   <!--KASSE 1-->
     <fieldset class="col-10 col-md-8 ml-lg-5 m-auto mb-5">
-        <legend> SYGEPLEJESKER</legend>
+        <legend> SYGEPLEJESKER</legend> <!--Dette er en overskrift der sidder på kassen-->
 
             
 <div class="card-deck m-auto justify-content-center"> 
@@ -109,9 +106,11 @@
                 </div>
         
     </div>
-        </fieldset>
+</fieldset>
 
     <br> <!--Laver mellemrum mellem de to kasser-->
+
+
 
 <!-------------KASSE 2----------->
 
@@ -204,19 +203,19 @@
     
 <ul class="list-unstyled">
     <li>
-        <p class="">Mandag til fredag</p>
+        <p>Mandag til fredag</p>
     </li>
 
     <li>
-        <p class=""> kl: 08:00 - 10:00 <br> kl: 10:30 - 12:00</p>
+        <p> kl: 08:00 - 10:00 <br> kl: 10:30 - 12:00</p>
     </li>
 
     <li>
-        <p class=""> Tlf: 7575 7575</p>
+        <p> Tlf: 7575 7575</p>
     </li>
 
     <li>
-        <p class="">læge@lægerneshus.dk <br>Lægegade 75, 7575 Lægebyen</p>
+        <p>læge@lægerneshus.dk <br>Lægegade 75, 7575 Lægebyen</p>
     </li>
 
         </ul>
@@ -231,7 +230,8 @@
 <ul class="list-unstyled">
     <li>
         <img src="img/ur2.png" alt="ur" class="ur-footer">
-        <p class="">Mandag til torsdag <br> kl: 08.00 - 16.00 <br>Fredag kl: 12.00 - 16:00 </p>
+        
+    <p>Mandag til torsdag <br> kl: 08.00 - 16.00 <br>Fredag kl: 08.00 - 12.00</p>
     </li>
 
         </ul>
@@ -245,11 +245,11 @@
 
 <ul class="list-unstyled">
     <li>
-        <p class=""> Ved akut sygdom <br>kontaktes lægevagten på:<br>Tlf: 2525 2525</p>
+        <p> Ved akut sygdom <br>kontaktes lægevagten på:<br> <br>Tlf: 2525 2525</p>
     </li>
             
     <li>
-        <p class=""> Hverdage: fra 16:00 - 08:00 <br> Weekend og helligdage: hele døgnet</p>
+        <p> Hverdage: fra 16:00 - 08:00 <br> Weekend og helligdage: hele døgnet</p>
     </li>
 
     </ul>
